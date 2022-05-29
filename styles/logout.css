@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(35, 31, 32);
+    color: white;
+}
+
+main a {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+main a:hover {
+    background-color: rgb(18, 31, 31);
+}
+
+@media (max-width: 750px) {
+    #links {
+        display: none;
+    }
+}

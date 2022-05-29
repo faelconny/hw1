@@ -1,0 +1,371 @@
+header {
+    height: 300px;
+    background-image: url(https://www.frammentirivista.it/wp-content/uploads/2017/09/the-jazz-singer-marquee.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+header h1 {
+    width: 780px;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+    position: relative;
+}
+
+#photo {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid rgb(155, 155, 155);
+}
+
+#name {
+    color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+article {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.form-box {
+    background-color: whitesmoke;
+    height: fit-content;
+    width: fit-content;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1.5px solid lightgray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    resize: none;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: whitesmoke;
+    border: 1.5px solid lightgray;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 6px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+}
+
+.custom-file-upload {
+    border: 1.5px solid lightgray;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    font-size: 0.9em;
+}
+
+#feed {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post {
+    width: 50%;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    color: gray;
+}
+
+.post .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1.5px solid lightgrey;
+}
+
+.post .user {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.post .user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid gray;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.post .user .name {
+    color: black;
+}
+
+.post .user .username {
+    font-size: 0.9em;
+}
+
+.post .user .name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.post .header .date {
+    margin: 10px;
+}
+
+.post .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.post .content img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.post .content p {
+    margin: 10px;
+}
+
+.post .bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    border-top: 1.5px solid lightgrey;
+}
+
+.post .bottom .like {
+    height: 35px;
+    border-radius: 3px;
+    margin-right: 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post .bottom .like img:hover {
+    cursor: pointer;
+    width: 35px;
+}
+
+.post .bottom .like img {
+    width: 30px;
+    margin-right: 5px;
+    transition: width 0.2s;
+}
+
+.post .bottom .like span {
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+footer div {
+    padding: 20px;
+}
+
+footer div a:link {
+    color: white;
+}
+
+footer div a:visited {
+    color: gray;
+}
+
+footer div a:hover {
+    background-color: white;
+    color: black;
+}
+
+.sidebar {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 40vh;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    #logo {
+        font-size: 1.4em;
+    }
+
+    article {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .box {
+        width: 75%;
+        height: 200px;
+    }
+
+    section .index {
+        width: 3px;
+    }
+
+    section .content {
+        width: 70vw;
+    }
+
+    .img {
+        margin-bottom: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer div {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .post {
+        width: 90%;
+    }
+
+    .form-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 750px) {
+    #links {
+        display: none;
+    }
+    
+    #menu {
+        display: block;
+    }
+
+    #menu:hover {
+        cursor: pointer;
+    }
+
+    .sidebar {
+        top: 0px;
+        right: 0px;
+        width: 0%;
+        background-color: white;
+        position: fixed;
+        height: 100%;
+        z-index: 2;
+        transition: width 0.5s;
+        display: block;
+        text-align: left;
+    }
+
+    .sidebar .link {
+        padding: 10px;
+        border: 1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sidebar img {
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+        transition: width 0.2s, height 0.2s;
+    }
+
+    .sidebar img:hover {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+    }
+
+    .page {
+        width: 100%;
+        transition: opacity 0.2s;
+    }
+
+    .open.sidebar {
+        width: 70%;
+    }
+
+    .close-sidebar {
+        top: 0px;
+        left: 0px;
+        width: 30%;
+        position: fixed;
+        height: 100%;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 850px) {
+    header h1 {
+        width: fit-content;
+    }
+}

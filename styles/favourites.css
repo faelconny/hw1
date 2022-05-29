@@ -1,0 +1,110 @@
+section {
+    border: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    max-height: 450px;
+    overflow-y: auto;
+    margin-bottom: 60px;
+    max-width: 700px;
+    background-color: rgb(220, 220, 220);
+}
+
+section .movie {
+    width: 150px;
+    height: fit-content;
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: whitesmoke;
+    transition: padding 0.2s;
+}
+
+section .movie:hover {
+    cursor: pointer;
+    padding: 20px;
+}
+
+section .movie h2 {
+    font-size: 1.5em;
+}
+
+input[type="text"] {
+    width: 100%;
+    background-color: whitesmoke;
+    border: 1.5px solid lightgray;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+#section {
+    margin: 30px;
+    padding: 20px;
+    text-align: left;
+    width: 30%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+#counter {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+#star {
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#star div {
+    font-size: 1.2em;
+}
+
+#star img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    transition: width 0.2s, height 0.2s;
+}
+
+#star img:hover {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.movie h2 {
+    font-size: 2em;
+    margin: 0px;
+}
+
+.movie h1 {
+    font-size: 1em;
+    color: gray;
+    margin-top: 0px;
+}
+
+.movie img {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+@media (max-width: 500px) {
+    #section {
+        width: 80%;
+    }
+
+    section .movie {
+        width: 35%;
+        margin: 5px;
+    }
+}
